@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TIME CONVERTER</title>
+</head>
+<body background="bg.jpg">
+	<h1 style="text-align: center; color: #4A2020;"><font style="font-size: 65px">𝕿𝖎𝖒𝖊 𝕮𝖔𝖓𝖛𝖊𝖗𝖙𝖊𝖗</font></h1>
+	<h4 style="text-align: center; color: #4A2020;"><font style="font-size: 40px">𝐿𝑒𝓉 𝓊𝓈 𝒸𝑜𝓃𝓋𝑒𝓇𝓉 𝓈𝑜𝓂𝑒 𝓉𝒾𝓂𝑒.</font></h4>
+	<h2 style="text-align: center;"><img src="coquetteclock.png"></h2>
+
+	<div class="container" style="border-style: dotted; color: white">
+		<table class="table table-striped table-bordered table-hover table-condensed" align="center">
+			<tr class="table-light">
+				<td>
+					<ul style="text-align: center;color: #4A2020"><h5><font style="font-size: 25px">𝚂𝚎𝚌𝚘𝚗𝚍𝚜</font></h5></ul>
+					<ul><input type="number" id="operandOne"></ul>
+						<input type="button" class="btn btn-light" onclick="S2M()" value="To Minutes">
+						<input type="button" class="btn btn-light" onclick="S2H()" value="To Hours">
+						<input type="button" class="btn btn-light" onclick="S2D()" value="To Days">
+				</td>
+				<td>
+					<ul style="text-align: center;color: #4A2020"><h5><font style="font-size: 25px">𝙼𝚒𝚗𝚞𝚝𝚎𝚜</font></h5></ul>
+					<ul><input type="number" id="operandTwo"></ul>
+						<input type="button" class="btn btn-light" onclick="M2S()" value="To Seconds">
+						<input type="button" class="btn btn-light" onclick="M2H()" value="To Hours">
+						<input type="button" class="btn btn-light" onclick="M2D()" value="To Days">
+				</td>
+			</tr>
+			<tr class="table-light">
+				<td>
+					<ul style="text-align: center;color: #4A2020"><h5><font style="font-size: 25px">𝙷𝚘𝚞𝚛𝚜</font></h5></ul>
+					<ul><input type="number" id="operandThree"></ul>
+						<input type="button" class="btn btn-light" onclick="H2S()" value="To Seconds">
+						<input type="button" class="btn btn-light" onclick="H2M()" value="To Minutes">
+						<input type="button" class="btn btn-light" onclick="H2D()" value="To Days">
+				</td>
+				<td>
+					<ul style="text-align: center;color: #4A2020"><h5><font style="font-size: 25px">𝙳𝚊𝚢𝚜</font></h5></ul>
+					<ul><input type="number" id="operandFour"></ul>
+						<input type="button" class="btn btn-light" onclick="D2S()" value="To Seconds">
+						<input type="button" class="btn btn-light" onclick="D2M()" value="To Minutes">
+						<input type="button" class="btn btn-light" onclick="D2H()" value="To Hours">
+				</td>
+			</tr>
+		</table>
+	</div>
+	<script type="text/javascript">
+		/*Seconds*/
+			function S2M(){
+				var x, y
+				x = (document.getElementById('operandOne').value);
+				y = 60;
+				alert(x / y);
+			}
+			function S2H(){
+				var x, y
+				x = (document.getElementById('operandOne').value);
+				y = 3600;
+				alert(x / y);
+			}
+			function S2D(){
+				var x, y
+				x = (document.getElementById('operandOne').value);
+				y = 86400;
+				alert(x / y);
+			}
+		/*Minutes*/
+			function M2S(){
+				var x, y
+				x = (document.getElementById('operandTwo').value);
+				y = 60;
+				alert(x * y);
+			}
+			function M2H(){
+				var x, y
+				x = (document.getElementById('operandTwo').value);
+				y = 60;
+				alert(x / y);
+			}
+			function M2D(){
+				var x, y
+				x = (document.getElementById('operandTwo').value);
+				y = 1400;
+				alert(x / y);
+			}
+		/*Hours*/
+			function H2S(){
+				var x, y
+				x = (document.getElementById('operandThree').value);
+				y = 3600;
+				alert(x * y);
+			}
+			function H2M(){
+				var x, y
+				x = (document.getElementById('operandThree').value);
+				y = 60;
+				alert(x * y);
+			}
+			function H2D(){
+				var x, y
+				x = (document.getElementById('operandThree').value);
+				y = 24;
+				alert(x / y);
+			}
+		/*Days*/
+			function D2S(){
+				var x, y
+				x = (document.getElementById('operandFour').value);
+				y = 86400;
+				alert(x * y);
+			}
+			function D2M(){
+				var x, y
+				x = (document.getElementById('operandFour').value);
+				y = 1440;
+				alert(x * y);
+			}
+			function D2H(){
+				var x, y
+				x = (document.getElementById('operandFour').value);
+				y = 24;
+				alert(x * y);
+			}
+	</script>
+</body>
+</html>
